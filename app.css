@@ -44,6 +44,9 @@ p{
     margin-right: auto;
     border:1px solid;
     border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
 
 
 }
