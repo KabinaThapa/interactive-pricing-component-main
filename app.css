@@ -73,6 +73,23 @@ p{
 input{
     width: 100%;
 }
+.toggle{
+    width:20%;
+    display: flex;
+    justify-content: space-between;
+}
+#togglerange{
+    width:10%;
+    
+}
+.subscription{
+    border: 1px solid;
+    width:60%;
+    display: flex;
+    justify-content:space-evenly;
+   
+    align-items: center;
+}
 ul{
     list-style: none;
     
