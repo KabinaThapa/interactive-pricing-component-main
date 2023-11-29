@@ -3,6 +3,57 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    padding: 0.5rem;
+    background-image: url('./images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    width:100%;
+   
+ 
+   
+    
+}
 p{
     color:red;
+}
+.top{
+   
+    width:60%;
+    height:15rem;
+    border:1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.top h1, .top h2{
+    z-index: 2;
+}
+.pattern{
+    position: absolute;
+    z-index: 1;
+}
+.bottom{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid;
+
+
+}
+.bottomb{
+    display: flex;
+    justify-content: space-around;
+    gap:0.5rem;
+    
+}
+ul{
+    list-style: none;
+    
+}
+li{
+    margin-bottom: 0.5rem;
 }
