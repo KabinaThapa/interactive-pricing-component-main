@@ -38,6 +38,7 @@ function updatePriceandViews(){
     console.log(selectValue)
     price.innerHTML=`$${discountedPrice}`
     pageviews.innerHTML=selectValue.pageviews
+    rangeinput.classList.add('dragged')
     }
     updatePriceandViews()
 rangeinput.addEventListener('input',updatePriceandViews)
