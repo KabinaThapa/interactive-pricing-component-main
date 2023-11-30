@@ -38,8 +38,16 @@ function updatePriceandViews(){
     console.log(selectValue)
     price.innerHTML=`$${discountedPrice}`
     pageviews.innerHTML=selectValue.pageviews
-    rangeinput.classList.add('dragged')
+
+  
     }
+    function progress() {
+        const percent = ((rangeinput.value - 1) / (rangeinput.max - 1)) * 100;
+        rangeinput.style.background = `linear-gradient(to right, aqua ${percent}%, white ${percent}%)`;
+      }
+      
     updatePriceandViews()
-rangeinput.addEventListener('input',updatePriceandViews)
+rangeinput.addEventListener('input',()=>{
+    updatePriceandViews() 
+    progress()})
 togglerange.addEventListener('input', updatePriceandViews)
